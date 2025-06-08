@@ -14,7 +14,7 @@ resource "spot_spotnodepool" "kubernetes_nodepool" {
   cloudspace_name = resource.spot_cloudspace.kubernetes_cloudspace.cloudspace_name
   server_class    = "gp.vs1.medium-iad"     ## Server basic type, 2 cores and 4GB of RAM per node.
   bid_price       = 0.001                   ## Fixed bid price to pay only 0.001/hour per node instance!
-  desired_server_count = 2                  ## Number of nodes that you want
+  desired_server_count = 3                  ## Number of nodes that you want
 
 ## If you want, you can activate the autoscaling!
 #  autoscaling = {

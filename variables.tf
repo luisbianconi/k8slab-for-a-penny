@@ -9,4 +9,3 @@ variable "preemption_webhook" {
   type        = string
   sensitive   = true
 }
-
